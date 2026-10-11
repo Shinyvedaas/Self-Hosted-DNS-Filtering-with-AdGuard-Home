@@ -21,3 +21,27 @@ sudo systemctl status AdGuardHome --no-pager
 sudo ss -lntup | grep -E ':(53|3000)\b'
 ```
 
+## 2. Router DHCP DNS Configuration
+
+### Objective
+
+Configure the router's DHCP server to advertise AdGuard Home as the DNS server for local network clients.
+
+### Configuration
+
+- **DHCP option:** Domain Name Server (Option 6)
+- **DNS server:** Raspberry Pi running AdGuard Home
+- **Configuration method:** Router DHCP IPv4 settings
+
+### Validation
+
+- [x] DHCP DNS option configured.
+- [x] AdGuard Home receives DNS queries from network clients.
+- [ ] DNS filtering tested with a known blocked domain.
+- [ ] Client DNS behavior verified.
+
+
+
+Screenshot: `../screenshots/dns-query-test.png`
+
+**Status:** DNS queries received successfully. Filtering behavior still needs to be tested.
