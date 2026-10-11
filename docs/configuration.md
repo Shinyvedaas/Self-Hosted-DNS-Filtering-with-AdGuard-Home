@@ -44,3 +44,30 @@ Configure the router's DHCP server to advertise AdGuard Home as the DNS server f
 
 ![DNS Query Test](../screenshots/dns-query-test.png)
 
+
+
+## 3. Expanded DNS Filtering
+
+### Objective
+
+Expand network-wide DNS filtering with the HaGeZi Multi NORMAL blocklist.
+
+### Blocklist configuration
+
+- **Name:** HaGeZi Multi NORMAL
+- **Format:** AdBlock
+- **Source:** https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt
+- **Purpose:** Additional filtering for advertising, tracking, telemetry, phishing, malware, and unwanted domains.
+
+### Validation checklist
+
+- [x] Blocklist added and enabled.
+- [x] Blocklist update completed successfully.
+- [x] Rule count verified.
+- [x] Normal DNS resolution tested.
+- [x] Previously blocked domain still blocked.
+- [x] Other devices checked for unexpected breakage.
+
+**Status:** Update after completing validation.
+
+![DNS blocklist](../screenshots/dns-blocklist.png)
