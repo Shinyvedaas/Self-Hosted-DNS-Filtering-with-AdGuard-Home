@@ -42,6 +42,5 @@ Configure the router's DHCP server to advertise AdGuard Home as the DNS server f
 
 
 
-Screenshot: /screenshots/dns-query-test.png
+![DNS Query Test](../screenshots/dns-query-test.png)
 
-**Status:** DNS queries received successfully. Filtering behavior still needs to be tested.
